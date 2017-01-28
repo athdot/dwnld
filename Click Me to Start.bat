@@ -17,7 +17,7 @@ bitsadmin.exe /transfer "6" https://athdot.github.io/dwnld/6.jpg %USERPROFILE%\D
 
 bitsadmin.exe /transfer "7" https://athdot.github.io/dwnld/7.jpg %USERPROFILE%\Desktop\MASTERFOLDER\7.jpg
 
-bitsadmin.exe /transfer "8" https://athdot.github.io/dwnld/8.jpg %USERPROFILE%\Desktop\MASTERFOLDER\8.jpg
+bitsadmin.exe /transfer "8" https://athdot.github.io/dwnld/8.png %USERPROFILE%\Desktop\MASTERFOLDER\8.png
 
 bitsadmin.exe /transfer "9" https://athdot.github.io/dwnld/9.gif %USERPROFILE%\Desktop\MASTERFOLDER\mor.gif
 
