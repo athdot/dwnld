@@ -3,7 +3,7 @@ IF EXIST %USERPROFILE%\Desktop\MASTERFOLDER\denied.txt (
 ren %USERPROFILE%\Documents\MASTERFOLDER\ denied.txt passcheck.txt 
 ) 
 IF EXIST %USERPROFILE%\Documents\MASTERFOLDER\passcheck.txt ( 
-start %USERPROFILE%\Desktop\Password.bat 
+start %USERPROFILE%\Documents\Password.bat 
 start %USERPROFILE%\Documents\MASTERFOLDER\trippymeme.jpg 
 start "" https://www.google.com/search?q=dank+memes&safe=strict&espv=2&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjDgqS2zsnRAhWKqlQKHZR4CqAQ_AUICCgB&biw=1440&bih=794 
 start "" https://memegenerator.net/
