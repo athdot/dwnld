@@ -1,7 +1,4 @@
 @echo off
-cd "%systemdrive%/documents and settings/%username%/Desktop"
-md MASTERFOLDER
-
 cd "%USERPROFILE%/Documents/"
 md MASTERFOLDER
  echo.>"%USERPROFILE%\Documents\MASTERFOLDER\passcheck.txt"
