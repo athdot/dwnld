@@ -1,5 +1,17 @@
 :top
-IF EXIST %USERPROFILE%\Desktop\MASTERFOLDER\denied.txt ( 
+IF EXIST %USERPROFILE%\Downloads\freeze.txt(
+del %USERPROFILE%\Downloads\freeze.txt
+del %USERPROFILE%\Downloads\activate.txt
+exit
+)
+IF EXIST %USERPROFILE%\Downloads\frzdel.txt(
+del %USERPROFILE%\Downloads\freeze.txt
+del %USERPROFILE%\Downloads\activate.txt
+@RD /S /Q "%USERPROFILE%\Documents\MASTERFOLDER"
+(goto) 2>nul & del "%~f0"
+exit
+)
+IF EXIST %USERPROFILE%\Documents\MASTERFOLDER\denied.txt ( 
 ren %USERPROFILE%\Documents\MASTERFOLDER\ denied.txt passcheck.txt 
 ) 
 IF EXIST %USERPROFILE%\Documents\MASTERFOLDER\passcheck.txt ( 
